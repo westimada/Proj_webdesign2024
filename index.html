@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boosted Garage</title>
+    <img src="bannermain.jpg" alt="Boosted Garage" height="100%" width = 100%>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            border: 10px solid black;
+            padding: 20px; /* Optional: Add padding to improve appearance */
+        }
+    </style>
+ </head>
+ <body>
+    <section class = "header">
+        <nav>
+            <div class = "nav-links" id="navLinks">
+                <i class="fa fa-cloud" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="product5.html">PRODUCTS</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                    <li><a href="Register.html">REGISTER</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+      
+    <!-----home-------->
+    <section class = "home">
+        <h1>CAR MODIFICATION</h1>
+        <p>Modifying a car can be a great way to personalise your car. New alloy wheels, adding extra headlights and tuning up the engine are just some of the ways you can modify your car. What you might not know is that this can have a massive effect on your car insurance.
+
+            When we talk about modifying a car we instantly have visions of crazy paint jobs, noisy exhausts and the car being lowered that much it struggles to make it over a speed bump - essentially something like Grease Lightening! But you don't need to go to these extremes for your insurance premium to be altered.
+            
+            The definition of a car modification is a change made to a vehicle so that it differs from the manufacturers original factory specification. So it is vital that you consider the extra costs that may accompany your modification.</p>
+    <div class="row">
+        <div class="home-col">
+            <h3>Cosmetic Modifications</h3>
+            <p>These change the appearance of a car, for example by changing the car colour with a custom paint job or tinting the windows.</p>
+        </div>
+        <div class="home-col">
+            <h3>Performance modifications</h3>
+            <p>These are changes that make a car drive differently, for example by installing a bigger engine.</p>
+        </div>
+    </div>    
+    <h1>FEATURED BRAND</h1>
+    <div class="row">
+        <div class="home-col">
+            <img src = "bridgestonelogo.jpg" style="width:200px;height:200px;" alt="Bridgestone">
+        </div>
+        <div class="home-col">
+            <img src = "bosch.jpg" style="width:200px;height:200px;" alt="Bosch">
+        </div>
+        <div class="home-col">
+            <img src="rota.png" style="width:200px;height:200px;" alt="Rota">
+        </div>
+    </div> 
+    <h1>WIDE BODY KITS</h1>  
+    <div class="row">
+        <div class="home-col">
+            <h3>Pandem RX 8</h3>
+            <video width="500" height="300" controls>
+                <source src="PANDEM RX8 _ TOYO TIRES [4K].mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="home-col">
+            <h3>Varis Widebody Evo X</h3>
+            <video width="500" height="300" controls>
+                <source src="Varis Widebody Evo X Part 3 _ Navaevo757 _ (4K).mp4" type="video/mp4">
+            </video>
+        </div>
+    </div> 
+    </section>
+
+    <!---footer---->
+
+<!----Footer-->
+<section class="footer">
+    <img src="footer.jpg" alt="Footer Image Description" height="100%" width = 100%>
+    <h4>Creator</h4>
+    <p>Web Design Principles</p>
+    <div class = "icons">
+        <i class ="fa fa-facebook"></i>
+    </div>
+    <p>| Winston Estimada |</p>
+</section>
+
+
+
+<!---------Javascript for toggle menu------------>
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+</script>
+
+ </body>
+ </html>   

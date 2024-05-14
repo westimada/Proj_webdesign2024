@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <img src="bannermain.jpg" alt="Boosted Garage" height="100%" width = 100%>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            border: 10px solid black;
+            padding: 20px; /* Optional: Add padding to improve appearance */
+        }
+    </style>
+ </head>
+ <body>
+    
+    <section class = "header">
+        <nav>
+            <div class = "nav-links" id="navLinks">
+                <i class="fa fa-cloud" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="product5.html">PRODUCTS</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                    <li><a href="Register.html">REGISTER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div style="width: 50%; margin: auto; text-align: center;">
+            <h1>Customer Registration Form</h1>
+            <br>
+            <br>
+            <div style="border: 1px solid #ccc; padding: 20px; margin-bottom: 20px;" id="registrationForm">
+                <h2>Registration Form</h2>
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Phone:</label><br>
+                <input type="text" id="phone" name="phone" required><br><br>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" required></textarea><br><br>
+                <input type="button" value="Register" onclick="displayInfo()">
+            </div>
+            <div style="display: none; border: 1px solid #ccc; padding: 20px;" id="customerDetails">
+                <h2>Customer Details</h2>
+                <p><strong>Full Name:</strong> <span id="fullNameDisplay"></span></p>
+                <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+                <p><strong>Phone:</strong> <span id="phoneDisplay"></span></p>
+                <p><strong>Address:</strong> <span id="addressDisplay"></span></p>
+            </div>
+        </div>
+    <!----Footer-->
+<section class="footer">
+    <img src="footer.jpg" alt="Footer Image Description" height="100%" width = 100%>
+    <h4>Creator</h4>
+    <p>Web Design Principles</p>
+    <div class = "icons">
+        <i class ="fa fa-facebook"></i>
+    </div>
+    <p>| Winston Estimada |</p>
+</section>  
+
+<!----Footer-->
+<section class="footer">
+    <img src="footer.jpg" alt="Footer Image Description" height="100%" width = 100%>
+    <h4>Creator</h4>
+    <p>Web Design Principles</p>
+    <div class = "icons">
+        <i class ="fa fa-facebook"></i>
+    </div>
+    <p>| Winston Estimada |</p>
+</section>
+
+        <script>
+            function displayInfo() {
+                // Get form values
+                var fullName = document.getElementById('fullName').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+                var address = document.getElementById('address').value;
+    
+                // Display form values
+                document.getElementById('fullNameDisplay').textContent = fullName;
+                document.getElementById('emailDisplay').textContent = email;
+                document.getElementById('phoneDisplay').textContent = phone;
+                document.getElementById('addressDisplay').textContent = address;
+    
+                // Hide registration form
+                document.getElementById('registrationForm').style.display = 'none';
+                // Show customer details
+                document.getElementById('customerDetails').style.display = 'block';
+            }         
+        </script>
+</body>
+</html>

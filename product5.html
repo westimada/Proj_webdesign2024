@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <img src="bannermain.jpg" alt="Boosted Garage" height="100%" width = 100%>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            border: 10px solid black;
+            padding: 20px; /* Optional: Add padding to improve appearance */
+        }
+    </style>
+ </head>
+ <body>
+    <section class = "header" >
+        <nav>
+            <div class = "nav-links" id="navLinks">
+                <i class="fa fa-cloud" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="product5.html">PRODUCTS</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                    <li><a href="Register.html">REGISTER</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <hr>
+<!----products-->
+
+<section class = "products">
+    <h1>AVAILABLE PRODUCTS</h1>
+    <p>SELECT FROM OUR VARIETY OF PRODUCTS FOR YOUR CAR NEEDS</p>
+    <br>
+    <br>
+    <h1>CAR HORN</h1>
+    <div class="row">
+        <div class="products-col">
+        <img src = "europa.jpg" style="width:200px;height:200px;" alt="Bosch Europa">
+        <h3>Bosch Europa</h3>
+        <p>Php 4,200</p>
+        <button class="btn add-to-cart" onclick="addToCart('Boscheuropa', 4200)">Add to Cart</button>
+    </div>
+    <div class="products-col">
+        <img src = "hellahorn.jpg" style="width:200px;height:200px;" alt="Hella">
+        <h3>Hella Horn</h3>
+        <p>Php 3,600</p>
+        <button class="btn add-to-cart"  onclick="addToCart('Hellahorn', 3600)">Add to Cart</button>
+    </div>
+    <div class="products-col">
+        <img src="mitsuba.jpg" style="width:200px;height:200px;" alt="Mitsuba">
+        <h3>Mitsuba Big Horn</h3>
+        <p>Php 2,200</p>
+        <button class="btn add-to-cart"  onclick="addToCart('Mitsuba', 2200)">Add to Cart</button>
+    </div>
+    </div>
+    <br>
+    <h1>CAR TIRES</h1>  
+    <div class="row">
+            <div class="products-col">
+                <img src = "re030.png" style="width:200px;height:200px;" alt="Potenza">
+                <h3>Bridgestone Potenza RE030</h3>
+                <p>Php 7,280</p>
+                <button class="btn add-to-cart"  onclick="addToCart('RE030', 7280)">Add to Cart</button>
+            </div>
+            <div class="products-col">
+                <img src = "fa_wildpeak_at_trail_full.jpg" style="width:200px;height:200px;" alt="Falken">
+                <h3>Falken Wildpeak AT Trail</h3>
+                <p>Php 20,735</p> 
+                <button class="btn add-to-cart"  onclick="addToCart('Falken', 20735)">Add to Cart</button>
+            </div>
+            <div class="products-col">
+                <img src="ecopiop300.png" style="width:200px;height:200px;" alt="Ecopia">
+                <h3>Bridgestone Ecopia</h3>
+                <p>Php 12,200</p>
+                <button class="btn add-to-cart"  onclick="addToCart('Ecopia', 12200)">Add to Cart</button>
+            </div>   
+    </div>       
+    <br>
+    <h1>WHEELS</h1>
+    <div class="row">
+            <div class="products-col">
+                <img src = "circuit-1.jpg" style="width:200px;height:200px;" alt="Circuit 10">
+                <h3>Rota Circuit 10</h3>
+                <p>Php 31,500</p>
+                <button class="btn add-to-cart"  onclick="addToCart('Circuit10', 31500)">Add to Cart</button>
+            </div>
+            <div class="products-col">
+                <img src = "Fighter10.jpg" style="width:200px;height:200px;" alt="Fighter 10">
+                <h3>Rota Fighter 10</h3>
+                <p>Php 30,500</p>
+                <button class="btn add-to-cart"  onclick="addToCart('Fighter10', 30500)">Add to Cart</button>
+            </div>
+            <div class="products-col">
+                <img src="Grid2.jpg" style="width:200px;height:200px;" alt="Grid 2">
+                <h3>Rota Grid 2</h3>
+                <p>Php 33,900</p>
+                <button class="btn add-to-cart"  onclick="addToCart('Grid2', 33900)">Add to Cart</button>
+            </div>   
+    </div> 
+    <br>
+    <h1>EXHAUST/MUFFLER</h1>
+    <div class="row">
+            <div class="products-col">
+                <img src = "HKS1.jpg" style="width:200px;height:200px;" alt="HKS HI POWER">
+                <h3>HKS Hi Power</h3>
+                <p>Php 15,000</p>
+                <button class="btn add-to-cart"  onclick="addToCart('HKS1', 15000)">Add to Cart</button>
+            </div>
+            <div class="products-col">
+                <img src = "HKS2.jpg" style="width:200px;height:200px;" alt="HKS HI FLOW">
+                <h3>HKS Hi Flow</h3>
+                <p>Php 60,500</p>
+                <button class="btn add-to-cart"  onclick="addToCart('HKS2', 60,500)">Add to Cart</button>
+            </div>
+            <div class="products-col">
+                <img src="HKS3.jpg" style="width:200px;height:200px;" alt="HKS Mid">
+                <h3>HKS Mid Flow</h3>
+                <p>Php 14,900</p>
+                <button class="btn add-to-cart"  onclick="addToCart('HKS3', 14900)">Add to Cart</button>
+            </div>   
+    </div>         
+    <br>
+    <h1>SUSPENSION SYSTEM</h1>
+    <div class="row">
+            <div class="products-col">
+                <img src = "kyb suspension.jpg" style="width:200px;height:200px;" alt="KYB">
+                <h3>KYB Suspension</h3>
+                <p>Php 20,100</p>
+                <button class="btn add-to-cart"  onclick="addToCart('KYB', 20100)">Add to Cart</button>
+            </div>
+            <div class="products-col">
+                <img src = "Bilstein b8 5100.jpg" style="width:200px;height:200px;" alt="B8">
+                <h3>Bilstein B8 5100</h3>
+                <p>Php 70,900</p>
+                <button class="btn add-to-cart"  onclick="addToCart('BilsteinB85100', 70900)">Add to Cart</button>
+            </div>
+            <div class="products-col">
+                <img src="bilstein shock absorver.jpg" style="width:200px;height:200px;" alt="Bilstein">
+                <h3>Bilstein Shock Absorver</h3>
+                <p>Php 45,000</p>
+                <button class="btn add-to-cart"  onclick="addToCart('Bilstein2', 45000)">Add to Cart</button>
+            </div>   
+    </div> 
+</section>
+<section class="cart" align="center">
+    <h2>Shopping Cart</h2>
+    <br>
+    <ul id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </ul>
+</section>
+<br>
+<br>
+<section class="checkout" align="center">
+    <h2>Checkout Form</h2>
+    <br>
+    <br>
+    <form id="checkout-form" onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+<section><!-- Checkout section -->
+    <section class="checkout-container" id="checkoutContainer" style="display: none;">
+        <h2>Checkout Form</h2>
+        <form id="checkout-form" onsubmit="handleSubmit(event)">
+            <!-- Your form elements -->
+        </form></section>
+
+           <!---footer---->
+
+<!----Footer-->
+<section class="footer">
+    <img src="footer.jpg" alt="Footer Image Description" height="100%" width = 100%>
+    <h4>Creator</h4>
+    <p>Web Design Principles</p>
+    <div class = "icons">
+        <i class ="fa fa-facebook"></i>
+    </div>
+    <p>| Winston Estimada |</p>
+</section>
+<script>
+
+    // Function to toggle checkout form visibility
+    function toggleCheckout() {
+            var checkoutContainer = document.getElementById("checkoutContainer");
+            checkoutContainer.style.display = checkoutContainer.style.display === "none" ? "block" : "none";
+        }
+        
+    // Array to store items in the cart
+    var cart = [];
+
+    // Function to add items to the cart
+    function addToCart(itemName, itemPrice) {
+        // Push the item to the cart array
+        cart.push({ name: itemName, price: itemPrice });
+        // Update cart display
+        updateCartDisplay();
+    }
+
+    // Function to update the cart display
+    function updateCartDisplay() {
+        var cartContainer = document.getElementById("cart-items");
+        var total = 0;
+        cartContainer.innerHTML = ""; // Clear previous content
+        cart.forEach(function(item) {
+            cartContainer.innerHTML += "<li>" + item.name + " - Php " + item.price + "</li>";
+            total += item.price;
+        });
+        cartContainer.innerHTML += "<li><strong>Total:</strong> Php " + total + "</li>";
+    }
+
+    // Function to handle form submission
+    function handleSubmit(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+        var formData = new FormData(event.target);
+        var customerDetails = {};
+        formData.forEach(function(value, key) {
+            customerDetails[key] = value;
+        });
+
+        // Create the receipt content
+        var receiptContent = "Customer Details:\n";
+        for (var key in customerDetails) {
+            receiptContent += key + ": " + customerDetails[key] + "\n";
+        }
+        receiptContent += "\nItems in Cart:\n";
+        cart.forEach(function(item) {
+            receiptContent += item.name + " - Php " + item.price + "\n";
+        });
+        receiptContent += "\nTotal: Php " + calculateTotalPrice();
+
+        // "Thank you " message
+    receiptContent += "\n\nThank you for purchasing @ Boosted Garage. We will deliver your item";
+
+        // Create a new HTML page with the receipt content
+        var newPage = "<html><head><title>Receipt</title></head><body><pre>" + receiptContent + "</pre></body></html>";
+
+        // Open the new page in a new window
+        var newWindow = window.open();
+        newWindow.document.open();
+        newWindow.document.write(newPage);
+        newWindow.document.close();
+    }
+
+    // Function to calculate the total price of items in the cart
+    function calculateTotalPrice() {
+        var total = 0;
+        cart.forEach(function(item) {
+            total += item.price;
+        });
+        return total;
+    }
+</script>
+ </body>
+</html>
